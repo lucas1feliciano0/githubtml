@@ -15,9 +15,9 @@ const theme: DefaultTheme = {
   hp,
 
   padding: {
-    small: 8,
-    medium: 12,
-    big: 24,
+    small: wp('1%'),
+    medium: wp('3%'),
+    big: wp('5%'),
   },
 
   colors: {
@@ -32,7 +32,7 @@ const theme: DefaultTheme = {
 
     texts: {
       primary: "#c9d1d9",
-      white: "#8b949e",
+      secondary: "#8b949e",
     },
 
     border: "#30363d",

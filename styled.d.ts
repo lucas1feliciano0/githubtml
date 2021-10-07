@@ -28,7 +28,7 @@ declare module "styled-components" {
 
       texts: {
         primary: string;
-        white: string;
+        secondary: string;
       };
 
       border: string;
