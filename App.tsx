@@ -2,6 +2,7 @@ import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import Toast from "react-native-toast-message";
 
 import useCachedResources from "@hooks/useCachedResources";
 import Navigation from "@navigation/index";
@@ -19,6 +20,7 @@ export default function App() {
         <ThemeProvider theme={theme}>
           <Navigation />
           <StatusBar style="inverted" />
+          <Toast ref={(ref) => Toast.setRef(ref)} />
         </ThemeProvider>
       </SafeAreaProvider>
     );

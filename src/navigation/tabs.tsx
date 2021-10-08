@@ -9,6 +9,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { RootTabParamList, RootTabScreenProps } from "../../types";
 
 import Home from "@screens/Home";
+import Search from "@screens/Search";
 
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
@@ -44,15 +45,15 @@ const navigation: React.FC = () => {
         component={Home}
         options={({ navigation }: RootTabScreenProps<"Home">) => ({
           title: "Explorar",
-          tabBarIcon: ({ color }) => <TabBarIcon name="search-circle-outline" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="rocket-outline" color={color} />,
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={Home}
+        name="Search"
+        component={Search}
         options={{
-          title: "Tab Two",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Pesquisar",
+          tabBarIcon: ({ color }) => <TabBarIcon name="search" color={color} />,
         }}
       />
     </BottomTab.Navigator>

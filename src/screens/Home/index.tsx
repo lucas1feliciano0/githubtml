@@ -1,36 +1,48 @@
 import React, { useEffect, useState } from "react";
+import Toast from "react-native-toast-message";
 
-import api from "@services/api";
+import { Repo } from "../../../types";
+
+import { trendingApi } from "@services/api";
 
 import RepoCard from "@components/RepoCard";
 
-import { Container, RepoList } from "./styles";
-
-export type Repo = {
-  name: string;
-  description: string;
-  forks: number;
-  stars: number;
-  lang: string;
-};
+import {
+  Container,
+  ContentContainer,
+  LoadingIndicator,
+  RepoList,
+} from "./styles";
 
 const Home: React.FC = () => {
+  const [fetching, setFetching] = useState(false);
   const [repos, setRepos] = useState<Repo[]>([]);
 
   useEffect(() => {
     async function loadRepos() {
-      const response: any = await api.get("/repo?since=weekly");
-      const rawData = response.data.items;
+      setFetching(true);
+      try {
+        const response: any = await trendingApi.get("/repo?since=weekly");
+        const rawData = response.data.items;
 
-      const repoData: Repo[] = rawData.map((repo: any) => ({
-        name: repo.repo,
-        description: repo.desc,
-        forks: repo.forks,
-        stars: repo.stars,
-        lang: repo.lang,
-      }));
+        const repoData: Repo[] = rawData.map((repo: any) => ({
+          name: repo.repo,
+          description: repo.desc,
+          forks: repo.forks,
+          stars: repo.stars,
+          lang: repo.lang,
+        }));
 
-      setRepos(repoData);
+        setRepos(repoData);
+      } catch (error) {
+        Toast.show({
+          type: "error",
+          text1: "Opa! Algo deu errado! :/",
+          text2: "Verifique sua conexão e tente novamente.",
+          topOffset: 60,
+        });
+      }
+      setFetching(false);
     }
 
     loadRepos();
@@ -38,7 +50,11 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      {repos && (
+      {fetching ? (
+        <ContentContainer>
+          <LoadingIndicator />
+        </ContentContainer>
+      ) : (
         <RepoList
           data={repos}
           keyExtractor={(repo: Repo) => repo.name}

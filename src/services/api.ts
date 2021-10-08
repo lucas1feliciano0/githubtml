@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const api = axios.create({
+export const trendingApi = axios.create({
   baseURL: "https://trendings.herokuapp.com",
 });
 
-export default api;
+export const githubApi = axios.create({
+  baseURL: "https://api.github.com",
+});

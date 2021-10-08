@@ -21,9 +21,9 @@ const theme: DefaultTheme = {
   },
 
   colors: {
-    primary: "#9466ff",
+    primary: "#07A0C3",
 
-    secondary: "#7954ce",
+    secondary: "#086788",
 
     background: {
       primary: "#010409",
