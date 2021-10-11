@@ -5,10 +5,7 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "test": "jest"
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
@@ -23,6 +20,7 @@
     "expo-linking": "~2.3.1",
     "expo-splash-screen": "~0.11.2",
     "expo-status-bar": "~1.0.4",
+    "expo-updates": "~0.8.1",
     "expo-web-browser": "~9.2.0",
     "lottie-react-native": "4.0.2",
     "react": "16.13.1",
@@ -34,10 +32,9 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-toast-message": "^1.6.0",
+    "react-native-unimodules": "0.14.10",
     "react-native-web": "~0.13.12",
-    "styled-components": "^5.3.1",
-    "expo-updates": "~0.8.1",
-    "react-native-unimodules": "0.14.10"
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -45,11 +42,15 @@
     "@types/react-native": "~0.63.2",
     "@types/styled-components": "^5.1.15",
     "@types/styled-components-react-native": "^5.1.1",
+    "babel-jest": "^27.2.5",
     "babel-plugin-module-resolver": "^4.1.0",
-    "jest-expo": "~41.0.0-beta.0",
+    "jest-expo": "^42.1.0",
+    "ts-node": "^10.2.1",
     "typescript": "~4.0.0"
   },
   "private": true,
   "name": "githubtml",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "App that allows you to see repositories that are trending on github and search for a user's repositories",
+  "author": "Lucas Feliciano"
 }
