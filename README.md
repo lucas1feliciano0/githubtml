@@ -1,19 +1,17 @@
 <h1 align="center">Welcome to <span style="color: #8877E7;">githubtml</span> 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-</p>
 
 > App that allows you to see repositories that are trending on github and search for a user's repositories
 
 ### :rocket: Technologies used
 
-- [React Native](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
 - [Axios](https://axios-http.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled-Components](https://styled-components.com/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Expo](https://expo.dev/)
+- [Lottie](https://airbnb.design/lottie/)
 
 
 ### 🧭 Running the application
