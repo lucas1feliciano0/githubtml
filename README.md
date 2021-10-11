@@ -34,15 +34,11 @@ $ yarn android
 
 <div style="display: flex; flex-direction: row">
 
-![Trending repositories timeline](/screenshots/trending.jpg "Optional Title")
+<img style="margin: 0 10px" alt="Trending repositories timeline" src="/screenshots/trending.jpg" width="160" height="auto">
 
-<div style="margin: 0 10px"></div>
+<img style="margin: 0 10px" alt="Trending repositories timeline" src="/screenshots/search.jpg" width="160" height="auto">
 
-![Trending repositories timeline](/screenshots/search.jpg "Optional Title")
-
-<div style="margin: 0 10px"></div>
-
-![Trending repositories timeline](/screenshots/search2.jpg "Optional Title")
+<img style="margin: 0 10px" alt="Trending repositories timeline" src="/screenshots/search2.jpg" width="160" height="auto">
 
 </div>
 
