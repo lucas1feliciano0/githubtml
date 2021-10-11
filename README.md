@@ -34,11 +34,11 @@ $ yarn android
 
 <div style="display: flex; flex-direction: row">
 
-<img style="margin: 0 25px" alt="Trending repositories timeline" src="/screenshots/trending.jpg" width="200" height="auto">
+<img style="margin: 0 23px" alt="Trending repositories timeline" src="/screenshots/trending.jpg" width="200" height="auto">
 
-<img style="margin: 0 25px" alt="Trending repositories timeline" src="/screenshots/search.jpg" width="200" height="auto">
+<img style="margin: 0 23px" alt="Trending repositories timeline" src="/screenshots/search.jpg" width="200" height="auto">
 
-<img style="margin: 0 25px" alt="Trending repositories timeline" src="/screenshots/search2.jpg" width="200" height="auto">
+<img style="margin: 0 23px" alt="Trending repositories timeline" src="/screenshots/search2.jpg" width="200" height="auto">
 
 </div>
 
